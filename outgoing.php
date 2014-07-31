@@ -2,7 +2,7 @@
 <html>
 
 <?php
-$jsonfile = 'incoming.cfg';
+$jsonfile = 'outgoing.cfg';
 $json = file_get_contents($jsonfile);
 $data = json_decode($json, true);
 
@@ -21,7 +21,7 @@ $data = json_decode($json, true);
     <h2>Providing Per-Flow QoS for Broadband Access Networks</h2>
 </div>
   <div id="basic-container" >
-    <div id="test-header" class="container_headings header_highlight">Incoming Internet Traffic | <a href="outgoing.php">Outgoing Internet Traffic </a></div>
+    <div id="test-header" class="container_headings header_highlight"><a href="index.php">Incoming Internet Traffic</a> | Outgoing Internet Traffic </div>
     <div id="test-content">
       <div class="container_child">
         <h1>Please indicate the percentage of bandwidth you wish to allocate for each application.</h1>
